@@ -1,0 +1,201 @@
+/* Estilo geral */
+
+/* Estilo da seção de início */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.inicio img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.bem-vindo h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.bem-vindo p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.bem-vindo button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bem-vindo button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo dos ícones sociais */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social svg {
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social svg:hover {
+    color: #007bff;
+}
+/*estilizando o sobre*/
+.container-sobre {
+    display: flex;
+    gap: 20px; /* Espaçamento entre foto e texto */
+    margin: 20px;
+    padding:20px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+  }
+  
+  .foto-sobre {
+    width: 250px; /* Largura da foto */
+    height: 350px; /* Altura proporcional */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .texto-sobre {
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 20px;
+  }
+  
+  h1, h3, p {
+    font-family: 'Arial', sans-serif; /* Tipografia moderna */
+    color: #333; /* Cor do texto */
+    padding: 8px;
+  }
+  
+  .formacao {
+    display: flex; /* Layout flexbox para as informações de formação */
+    flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-top: 10px;
+  }
+  
+  .formacao div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .formacao div:hover{
+    background-color: #ddd;
+  }
+
+  /* estilizando a pagina habilidades*/
+  .habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #3d3c3c;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .habilidades h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .habilidades span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .habilidades ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .habilidades p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #fff;
+  }
+  
+/* Responsividade */
+@media (min-width: 768px) {
+    .inicio {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .inicio div {
+        flex: 1;
+    }
+
+    .bem-vindo {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    .sobre h3 {
+        font-size: 1.5em;
+    }
+
+    .sobre p {
+        font-size: 0.9em;
+    }
+
+    .formacao div span, .formacao div h4 {
+        font-size: 0.9em;
+    }
+}
