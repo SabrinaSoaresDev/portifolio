@@ -7,7 +7,11 @@
     align-items: center;
     text-align: center;
     padding: 50px 20px;
+<<<<<<< HEAD
     background: linear-gradient(to right, #ffffff, #00b4d8);
+=======
+    background-color: #ffffff;
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     border-radius: 10px;
@@ -66,6 +70,7 @@
     color: #007bff;
 }
 /*estilizando o sobre*/
+<<<<<<< HEAD
 .titulo {
   text-align: center;
   font-size: 2.5em;
@@ -205,6 +210,57 @@
     align-items: center;
   }
 }
+=======
+.container-sobre {
+    display: flex;
+    gap: 20px; /* Espaçamento entre foto e texto */
+    margin: 20px;
+    padding:20px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+  }
+  
+  .foto-sobre {
+    width: 250px; /* Largura da foto */
+    height: 350px; /* Altura proporcional */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .texto-sobre {
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 20px;
+  }
+  
+  h1, h3, p {
+    font-family: 'Arial', sans-serif; /* Tipografia moderna */
+    color: #333; /* Cor do texto */
+    padding: 8px;
+  }
+  
+  .formacao {
+    display: flex; /* Layout flexbox para as informações de formação */
+    flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-top: 10px;
+  }
+  
+  .formacao div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .formacao div:hover{
+    background-color: #ddd;
+  }
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
 
   /* estilizando a pagina habilidades*/
   .habilidades {
@@ -217,10 +273,21 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
     margin: 20px;
+<<<<<<< HEAD
     
   }
   
   
+=======
+  }
+  
+  .habilidades h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
   
   .habilidades span {
     font-weight: bold;
@@ -251,6 +318,7 @@
     margin-top: 5px;
     color: #fff;
   }
+<<<<<<< HEAD
   /* estilizando projeto*/
   .projetos {
     max-width: 1200px;
@@ -365,6 +433,9 @@
       transform: translateY(0);
     }
   }
+=======
+  
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
 /* Responsividade */
 @media (min-width: 768px) {
     .inicio {
@@ -381,6 +452,7 @@
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   .projetos {
       padding: 10px;
@@ -405,6 +477,8 @@
   }
 }
 
+=======
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
 @media (max-width: 600px) {
     section {
         padding: 10px;

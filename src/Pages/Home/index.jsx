@@ -5,6 +5,7 @@ import { IoIosRocket } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import perfil from '../../assets/perfil2.jpeg';
 import foto from '../../assets/foto.jpg';
+<<<<<<< HEAD
 import chamados from '../../assets/chamado .png';
 import filmes from '../../assets/filme.png';
 import landing from '../../assets/landigin.png';
@@ -14,6 +15,9 @@ import cardapio from '../../assets/cardapio.png';
 import link from '../../assets/link.png';
 import './home.css';
 import { Link } from "react-router-dom";
+=======
+import './home.css';
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
 
 export default function Home(){
     return(
@@ -36,12 +40,19 @@ export default function Home(){
                 </div>
             </section>
             <section>
+<<<<<<< HEAD
             <h1 className="titulo">Sobre</h1>
+=======
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
               <div class="container-sobre">
                 
                   <img src={foto} alt="Minha foto" className="foto-sobre" />
                 <div class="texto-sobre">
+<<<<<<< HEAD
                   
+=======
+                  <h1>Sobre</h1>
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
                   <h3>Meu nome é Sabrina Soares!</h3>
                   <p>Tenho 26 anos, sou natural de Minas Gerais, nascida na cidade de Joaima, mas morando em Governador Valadares.</p>
                   <p>Profissional formada em Sistemas de Informação, com sólida experiência em análise de sistemas e suporte técnico. Conhecimento avançado em HTML, CSS, JavaScript e atualmente aprofundando em React. Comprometida com a excelência na execução de serviços, destacando-se pela capacidade de resolver problemas de forma ágil e eficiente, contribuindo para a otimização dos processos e satisfação dos clientes.</p>
@@ -64,9 +75,14 @@ export default function Home(){
               </div>
 </section>
 
+<<<<<<< HEAD
         <section>
             <h1 className="titulo">Habilidades</h1>
             <div class="habilidades">
+=======
+        <section class="habilidades">
+            <h1>Habilidades</h1>
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
             <span>Linguagens</span>
             <ul>
                 <li>
@@ -82,6 +98,7 @@ export default function Home(){
                 <FaReact size={80} color="#2E86C1" />  <p>React</p>
                 </li>
             </ul>
+<<<<<<< HEAD
             </div>
             </section>
             <section className="projetos">
@@ -152,6 +169,14 @@ export default function Home(){
             </section>
             
 
+=======
+            </section>
+            <section>
+                <h1>Projetos</h1>
+                <h4>Gestão de Chamados </h4>
+                <p></p>
+            </section>
+>>>>>>> 1a72db6270f08d787e874108407de12142033ba3
         </>
     )
 }
