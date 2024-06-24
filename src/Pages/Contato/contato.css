@@ -21,6 +21,18 @@
     margin: 40px; /* Alterado para margem em todas as direções */
   }
   
+  .input-container textarea{
+    width: 60%;
+    font-size: 18px;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
   .form-container h2 {
     font-size: 30px;
     margin-bottom: 10px;

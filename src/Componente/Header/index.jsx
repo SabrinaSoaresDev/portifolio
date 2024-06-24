@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { useState } from "react";
-import "./header.css"; // Importando o arquivo CSS
+import "./header.css"; 
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,19 +26,19 @@ function Header() {
         <div className="nav-list">
           <ul>
             <li>
-              <Link to="/" onClick={scrollToTop}>Inicio</Link>
+              <a href="/" onClick={scrollToTop}>Inicio</a>
             </li>
             <li>
-              <Link to="#sobre" onClick={scrollToTop}>Sobre</Link>
+              <a href="#sobre">Sobre</a>
             </li>
             <li>
-              <Link to="#habilidades">Habilidades</Link>
+              <a href="#habilidades" >Habilidades</a>
             </li>
             <li>
-              <Link to="#projetos" onClick={scrollToTop}>Projetos</Link>
+              <a href="#projetos" >Projetos</a>
             </li>
             <li>
-              <Link to="/contato" onClick={scrollToTop}>Contatos</Link>
+              <a href="/contato" onClick={scrollToTop}>Contatos</a>
             </li>
           </ul>
         </div>
@@ -49,16 +49,20 @@ function Header() {
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
         <ul>
           <li>
-            <Link to="/" onClick={scrollToTop}>Inicio</Link>
+            <a href="/" onClick={scrollToTop}>Inicio</a>
+          </li>
+          
+          <li>
+            <a href="#sobre" >Sobre</a>
           </li>
           <li>
-            <Link to="/contato" onClick={scrollToTop}>Contato</Link>
+            <a href="#habilidades" >Habilidades</a>
           </li>
           <li>
-            <Link to="/AreaCliente">Area do Cliente</Link>
+            <a href="#projetos" >Projetos</a>
           </li>
           <li>
-            <Link to="/blog" onClick={scrollToTop}>Informativo</Link>
+            <a href="/contato" onClick={scrollToTop}>Contato</a>
           </li>
         </ul>
       </div>

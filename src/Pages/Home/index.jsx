@@ -40,7 +40,7 @@ export default function Home(){
                 <Link to="https://github.com/SabrinaSoaresDev" target="_blank"><FaGithub size={25} /></Link>
                 </div>
             </section>
-            <section>
+            <section id="sobre">
 
             <h1 className="titulo">Sobre</h1>
 
@@ -70,7 +70,7 @@ export default function Home(){
               </div>
 </section>
 
-        <section>
+        <section id="habilidades">
             <h1 className="titulo">Habilidades</h1>
             <div className="habilidades">
 
@@ -92,7 +92,7 @@ export default function Home(){
 
             </div>
             </section>
-            <section className="projetos">
+            <section id="projetos" className="projetos">
             <h1 className="titulo">Projetos</h1>
             <div className="projetos-container">
               <img src={chamados} alt="sistema de chamado" className="projetos-img"  />
