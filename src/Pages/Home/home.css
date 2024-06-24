@@ -781,3 +781,51 @@ h1, h3, p {
       font-size: 0.9em;
   }
 }
+
+/* Estilização do Botão do WhatsApp */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+.btn-whatsapp img {
+  max-width: 34px;
+  transition: transform 0.4s;
+}
+
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tootip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  background-color: #333;
+  color: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tootip-text {
+  visibility: visible;
+  opacity: 1;
+}

@@ -15,6 +15,7 @@ import link from '../../assets/link.png';
 import './home.css';
 import { Link } from "react-router-dom";
 import Footer from '../../Componente/Footer';
+import whatsapp from "../../assets/whatsapp.svg";
 
 const curriculumUrl = 'https://drive.google.com/file/d/1vq6WosUlE0MahoaKmrSBJaVOYnssfIgl/view';
 export default function Home(){
@@ -159,6 +160,16 @@ export default function Home(){
               </div>
             </section>
             <Footer />
+            <div>
+        <a
+          href="https://api.whatsapp.com/send?phone=553332714427&text=Quero%20fazer%20um%20Agendamento%20Hoje"
+          className="btn-whatsapp"
+          target="_blank"
+        >
+          <img src={whatsapp} alt="btn-whatsapp" />
+          <span className="tootip-text">whatsapp</span>
+        </a>
+      </div>
         </>
     )
 }
