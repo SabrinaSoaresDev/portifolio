@@ -18,11 +18,8 @@
     align-items: center;
     text-align: center;
     padding: 50px 20px;
-
     background: linear-gradient(to right, #ffffff, #00b4d8);
-
     background-color: #ffffff;
-
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     border-radius: 10px;
@@ -575,7 +572,16 @@ h1, h3, p {
 
 }
 
-
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes fadeInDown {
   0% {

@@ -35,13 +35,10 @@ function Header() {
               <Link to="#habilidades">Habilidades</Link>
             </li>
             <li>
-              <Link to="#serviços" onClick={scrollToTop}>Serviços</Link>
-            </li>
-            <li>
               <Link to="#projetos" onClick={scrollToTop}>Projetos</Link>
             </li>
             <li>
-              <Link to="#contato" onClick={scrollToTop}>Contatos</Link>
+              <Link to="/contato" onClick={scrollToTop}>Contatos</Link>
             </li>
           </ul>
         </div>

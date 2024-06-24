@@ -1,0 +1,130 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  } 
+  .footer ul {
+    display: flex;
+    flex-direction: row; /* Adicionando flex-direction para alinhar os itens na horizontal */
+    
+  }
+  .footer ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+  .content {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+  .telefone {
+    color: #fff;
+  }
+  .telefone ul a {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: transparent;
+  }
+  .telefone p {
+    color: #fff;
+  }
+  
+  .pe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .social{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  .social a {
+    transition: transform 0.5s;
+  }
+  .social a:hover{
+    transform: scale(1.2);
+  }
+  @media screen and (max-width: 768px) {
+    .footer {
+      width: 768px;
+      flex-direction: column;
+    }
+    .telefone ul a {
+      flex-direction: column;
+      padding: 4px;
+      font-size: 18px;
+    }
+    .telefone {
+      align-items: start;
+      justify-content: start;
+      margin: 0;
+      padding-top: 0 !important;
+    }
+    .footer ul {
+      flex-direction: column;
+    }
+    .footer img {
+      width: 50%;
+      height: auto;
+      margin-top: 30px;
+    }
+    .pe {
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: 0 !important;
+    }
+    .social{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .footer {
+      width: 430px;
+      flex-direction: column;
+    }
+    .telefone ul a {
+      flex-direction: column;
+      padding: 4px;
+      font-size: 18px;
+    }
+    .telefone {
+      align-items: start;
+      justify-content: start;
+      margin: 0;
+      padding-top: 0 !important;
+    }
+    .footer ul {
+      flex-direction: column;
+    }
+    .footer img {
+      width: 50%;
+      height: auto;
+      margin-top: 30px;
+    }
+    .pe {
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: 0 !important;
+    }
+    .social{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
