@@ -15,19 +15,19 @@ export default function Footer(){
         <div className="content">
           <div className="telefone">
             <ul>
-              <Link to="/" onClick={scrollToTop}>
+              <a href="/" onClick={scrollToTop}>
                 Inicio
-              </Link>
-              <Link to="#sobre">
+              </a>
+              <a href="#sobre">
                 Sobre
-              </Link>
-              <Link to="#habilidades">Habilidades</Link>
-              <Link to="#projeto">
+              </a>
+              <a href="#habilidades">Habilidades</a>
+              <a href="#projeto">
                 Projetos
-              </Link>
-              <Link to="/contato" onClick={scrollToTop}>
+              </a>
+              <a href="/contato" onClick={scrollToTop}>
                 Contato
-              </Link>
+              </a>
             </ul>
           </div>
           <div className="social">
