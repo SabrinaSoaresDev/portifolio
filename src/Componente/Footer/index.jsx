@@ -25,9 +25,7 @@ export default function Footer(){
               <a href="#projeto">
                 Projetos
               </a>
-              <a href="/contato" onClick={scrollToTop}>
-                Contato
-              </a>
+              
             </ul>
           </div>
           <div className="social">
