@@ -37,9 +37,7 @@ function Header() {
             <li>
               <a href="#projetos" >Projetos</a>
             </li>
-            <li>
-              <a href="/contato" onClick={scrollToTop}>Contatos</a>
-            </li>
+           
           </ul>
         </div>
         <div className="mobile-menu-icon" onClick={toggleMenu}>
