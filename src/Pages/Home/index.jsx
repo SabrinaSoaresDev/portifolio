@@ -7,6 +7,7 @@ import { IoIosRocket } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import perfil from '../../assets/perfil2.jpeg';
 import foto from '../../assets/foto.jpg';
+import tarefas from '../../assets/tarefas.png';
 import chamados from '../../assets/chamado .png';
 import filmes from '../../assets/filme.png';
 import landing from '../../assets/landigin.png';
@@ -109,6 +110,14 @@ export default function Home(){
             </section>
             <section id="projetos" className="projetos">
             <h1 className="titulo">Projetos</h1>
+               <div className="projetos-container">
+              <img src={tarefas} alt="sistema de tarefas" className="projetos-img"  />
+                <div className="projetos-content">
+                    <h4>Lista de Tarefas</h4>
+                    <p>Sistema de Gestão de Tarefas</p>
+                    <Link to="https://tarefas-roan.vercel.app/" target="_blank">Visualizar</Link>
+                    <Link to="https://github.com/SabrinaSoaresDev/Tarefas" target="_blank">Github</Link>
+                </div>
             <div className="projetos-container">
               <img src={chamados} alt="sistema de chamado" className="projetos-img"  />
                 <div className="projetos-content">
