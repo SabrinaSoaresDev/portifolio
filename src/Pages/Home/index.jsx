@@ -121,15 +121,16 @@ export default function Home() {
           <button onClick={downloadCurriculum} aria-label="Baixar currículo">Download Currículo</button>
         </div>
         <div className="social">
-          <Link to="https://www.instagram.com/sabrinams.9/" target="_blank" aria-label="Instagram">
+          <a href="https://www.instagram.com/sabrinams.9/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram size={25} />
-          </Link>
-          <Link to="https://www.linkedin.com/in/sabrina-moreira-soares-caires/" target="_blank" aria-label="LinkedIn">
+          </a>
+          <a href="https://www.linkedin.com/in/sabrina-moreira-soares-caires/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin size={25} />
-          </Link>
-          <Link to="https://github.com/SabrinaSoaresDev" target="_blank" aria-label="GitHub">
+          </a>
+          <a href="https://github.com/SabrinaSoaresDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub size={25} />
-          </Link>
+          </a>
+
         </div>
       </section>
 
@@ -189,8 +190,8 @@ export default function Home() {
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
                 <div className="projeto-links">
-                  <Link to={project.liveUrl} target="_blank" rel="noopener noreferrer">Visualizar</Link>
-                  <Link to={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</Link>
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Visualizar</a>
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </div>
