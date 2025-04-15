@@ -1,5 +1,4 @@
 import "./footer.css";
-import { Link } from "react-router-dom";
 import { BiLogoInstagram, BiLogoFacebookSquare } from "react-icons/bi";
 
 export default function Footer(){
@@ -29,13 +28,13 @@ export default function Footer(){
             </ul>
           </div>
           <div className="social">
-              <Link to={"https://www.instagram.com/sabrinams.9/"} target="_blank"><BiLogoInstagram size={35} color="#fff" /></Link>
-              <Link to={"https://www.facebook.com/sabrina.Moreira.0/"} target="_blank"><BiLogoFacebookSquare size={35} color="#fff" /></Link>
+              <a href={"https://www.instagram.com/sabrinams.9/"} target="_blank"><BiLogoInstagram size={35} color="#fff" /></a>
+              <a href={"https://www.facebook.com/sabrina.Moreira.0/"} target="_blank"><BiLogoFacebookSquare size={35} color="#fff" /></a>
               </div>
         </div>
       </footer>
       <div className="pe">
-        <p>Copyright 2024 | Todos os direitos Reservados. | Desenvolvido Por: Sabrina Soares</p>
+        <p>Copyright 2025 | Todos os direitos Reservados. | Desenvolvido Por: Sabrina Soares</p>
       </div>
         </>
     )
