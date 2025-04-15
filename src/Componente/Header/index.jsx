@@ -20,9 +20,9 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav-bar">
-        <Link className="logo" to="/" onClick={scrollToTop}>
+        <a className="logo" href="/" onClick={scrollToTop}>
           Sabrina Soares Dev
-        </Link>
+        </a>
         <div className="nav-list">
           <ul>
             <li>
