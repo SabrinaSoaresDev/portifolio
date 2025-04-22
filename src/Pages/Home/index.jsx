@@ -142,7 +142,7 @@ export default function Home() {
           <img src={foto} alt="Sabrina Soares" className="foto-sobre" />
           <div className="texto-sobre">
             <h3>Meu nome é Sabrina Soares!</h3>
-            <p>Tenho 26 anos, sou natural de Minas Gerais, nascida na cidade de Joaima, mas morando em Governador Valadares.</p>
+            <p>Tenho 27 anos, sou natural de Minas Gerais, nascida na cidade de Joaima, mas morando em Governador Valadares.</p>
             <p>Profissional formada em Sistemas de Informação, com sólida experiência em análise de sistemas e suporte técnico. Conhecimento avançado em HTML, CSS, JavaScript e atualmente aprofundando em React. Comprometida com a excelência na execução de serviços, destacando-se pela capacidade de resolver problemas de forma ágil e eficiente, contribuindo para a otimização dos processos e satisfação dos clientes.</p>
             <p>Segue abaixo algumas habilidades e projetos que realizei:</p>
             <div className="formacao">
