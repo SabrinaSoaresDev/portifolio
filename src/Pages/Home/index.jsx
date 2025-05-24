@@ -8,7 +8,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import perfil from '../../assets/perfil2.jpeg';
 import foto from '../../assets/foto.jpg';
 import tarefas from '../../assets/tarefas.png';
-import chamados from '../../assets/chamado.png';
+import finances from '../../assets/finances.png';
+import Chamados from '../../assets/chamado.png';
 import filmes from '../../assets/filme.png';
 import landing from '../../assets/landigin.png';
 import barbearia from '../../assets/barbearia.png';
@@ -29,11 +30,12 @@ const PROJECTS = [
     liveUrl: "https://tarefas-roan.vercel.app/",
     githubUrl: "https://github.com/SabrinaSoaresDev/Tarefas"
   },
+ 
   {
     id: 2,
     title: "Gestão de Chamados",
     description: "Gestão de chamados onde é informado e registrado todos os chamados da empresa e gerar relatório pelo excel.",
-    image: chamados,
+    image: Chamados,
     liveUrl: "https://chamado-cofarminas-pjzq5nyci-sabrinasoaresdev.vercel.app/",
     githubUrl: "https://github.com/SabrinaSoaresDev/chamado-cofarminas.git"
   },
@@ -84,7 +86,15 @@ const PROJECTS = [
     image: calculadora,
     liveUrl: "https://calculadora-olv6cu2mi-sabrinasoaresdev.vercel.app/",
     githubUrl: "https://github.com/SabrinaSoaresDev/CalculadoraIMC.git"
-  }
+  },
+   {
+    id: 9,
+    title: "Controle Financeiro",
+    description: "Sistema de Controle Financeiro",
+    image: finances,
+    liveUrl: "https://controle-financ.netlify.app",
+    githubUrl: "https://github.com/SabrinaSoaresDev/Controle-Financeiro"
+  },
 ];
 
 const SKILLS = [
@@ -180,24 +190,27 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projetos" className="projetos" aria-labelledby="projects-heading">
+        <section id="projetos" className="projetos" aria-labelledby="projects-heading">
         <h1 id="projects-heading" className="titulo">Projetos</h1>
         <div className="projects-grid">
           {PROJECTS.map(project => (
             <div key={project.id} className="projeto-card">
-              <img src={project.image} alt={project.title} className="projeto-img" />
-              <div className="projeto-content">
-                <h4>{project.title}</h4>
-                <p>{project.description}</p>
-                <div className="projeto-links">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Visualizar</a>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+              <div className="projeto-inner"> 
+                <img src={project.image} alt={project.title} className="projeto-img" />
+                <div className="projeto-content">
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                  <div className="projeto-links">
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Visualizar</a>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </section>
+
 
       <Footer />
       
