@@ -108,7 +108,7 @@ const SKILLS = [
   { name: "MySQL", icon: <SiMysql size={80} color="#fff" /> }
 ];
 
-const curriculumUrl = 'https://drive.google.com/file/d/1vq6WosUlE0MahoaKmrSBJaVOYnssfIgl/view';
+const curriculumUrl = 'https://drive.google.com/drive/recent?hl=pt-br';
 
 export default function Home() {
   const downloadCurriculum = () => {
