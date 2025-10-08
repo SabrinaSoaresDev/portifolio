@@ -15,16 +15,11 @@ import landing from '../../assets/landigin.png';
 import barbearia from '../../assets/barbearia.png';
 import calculadora from '../../assets/calculadoraIMC.png';
 import cardapio from '../../assets/cardapio.png';
-<<<<<<< HEAD
-import link from '../../assets/link.png';
-import './home.css';
-import { Link } from "react-router-dom";
-=======
 import agendamentos from '../../assets/agendamentos.png';
-import joias from '../../assets/joias.png';
 import link from '../../assets/link.png';
+import joias from '../../assets/joias.png';
+import click from '../../assets/click.png';
 import './home.css';
->>>>>>> 1edf2a1 (alterando estilização)
 import Footer from '../../Componente/Footer';
 import whatsapp from "../../assets/whatsapp.svg";
 
@@ -37,7 +32,6 @@ const PROJECTS = [
     liveUrl: "https://tarefas-roan.vercel.app/",
     githubUrl: "https://github.com/SabrinaSoaresDev/Tarefas"
   },
- 
   {
     id: 2,
     title: "Gestão de Chamados",
@@ -94,7 +88,7 @@ const PROJECTS = [
     liveUrl: "https://calculadora-olv6cu2mi-sabrinasoaresdev.vercel.app/",
     githubUrl: "https://github.com/SabrinaSoaresDev/CalculadoraIMC.git"
   },
-   {
+  {
     id: 9,
     title: "Controle Financeiro",
     description: "Sistema de Controle Financeiro",
@@ -102,11 +96,9 @@ const PROJECTS = [
     liveUrl: "https://controle-financ.netlify.app",
     githubUrl: "https://github.com/SabrinaSoaresDev/Controle-Financeiro"
   },
-<<<<<<< HEAD
-=======
-   {
+  {
     id: 10,
-    title: " Agendamentos – Sistema de Gestão para Barbearias",
+    title: "Agendamentos – Sistema de Gestão para Barbearias",
     description: "Sistema de Agendamentos",
     image: agendamentos,
     liveUrl: "https://agendamentos-steel.vercel.app/",
@@ -120,7 +112,14 @@ const PROJECTS = [
     liveUrl: "https://tavira-semi-joias.vercel.app/",
     githubUrl: "https://github.com/SabrinaSoaresDev/Tavira-Semi-Joias"
   },
->>>>>>> 1edf2a1 (alterando estilização)
+  {
+    id: 12,
+    title: "ClickCERTO Soluções em TI",
+    description: "meu site de serviços de informática",
+    image: click,
+    liveUrl: "https://click-certo.vercel.app/#",
+    githubUrl: "https://github.com/SabrinaSoaresDev/Click-Certo"
+  },
 ];
 
 const SKILLS = [
@@ -166,23 +165,17 @@ export default function Home() {
           <a href="https://github.com/SabrinaSoaresDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub size={25} />
           </a>
-
         </div>
       </section>
 
       {/* About Section */}
       <section id="sobre" aria-labelledby="about-heading">
         <h1 id="about-heading" className="titulo">Sobre</h1>
-
         <div className="container-sobre">
           <img src={foto} alt="Sabrina Soares" className="foto-sobre" />
           <div className="texto-sobre">
             <h3>Meu nome é Sabrina Soares!</h3>
-<<<<<<< HEAD
-            <p>Tenho 27 anos, sou natural de Minas Gerais, nascida na cidade de Joaima, mas morando em Governador Valadares.</p>
-=======
             <p>Tenho 28 anos, sou natural de Minas Gerais, nascida na cidade de Joaima, mas morando em Governador Valadares.</p>
->>>>>>> 1edf2a1 (alterando estilização)
             <p>Profissional formada em Sistemas de Informação, com sólida experiência em análise de sistemas e suporte técnico. Conhecimento avançado em HTML, CSS, JavaScript e atualmente aprofundando em React. Comprometida com a excelência na execução de serviços, destacando-se pela capacidade de resolver problemas de forma ágil e eficiente, contribuindo para a otimização dos processos e satisfação dos clientes.</p>
             <p>Segue abaixo algumas habilidades e projetos que realizei:</p>
             <div className="formacao">
@@ -190,21 +183,13 @@ export default function Home() {
                 <FaGraduationCap size={25} aria-hidden="true" />
                 <h4>Formação</h4>
                 <span>Sistemas de Informação</span>
-<<<<<<< HEAD
-                <span>Concluído</span>
-=======
                 <span> / Concluído</span>
->>>>>>> 1edf2a1 (alterando estilização)
               </div>
               <div>
                 <IoIosRocket size={25} aria-hidden="true" />
                 <h4>Cursos Complementares</h4>
                 <span>React Js do zero ao avançado na prática</span>
-<<<<<<< HEAD
-                <span>Em Andamento</span>
-=======
                 <span> / Em Andamento</span>
->>>>>>> 1edf2a1 (alterando estilização)
               </div>
             </div>
           </div>
@@ -228,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-        <section id="projetos" className="projetos" aria-labelledby="projects-heading">
+      <section id="projetos" className="projetos" aria-labelledby="projects-heading">
         <h1 id="projects-heading" className="titulo">Projetos</h1>
         <div className="projects-grid">
           {PROJECTS.map(project => (
@@ -249,7 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-
       <Footer />
       
       {/* WhatsApp Floating Button */}
@@ -262,10 +246,6 @@ export default function Home() {
           aria-label="Contato pelo WhatsApp"
         >
           <img src={whatsapp} alt="WhatsApp" />
-<<<<<<< HEAD
-          <span className="tooltip-text">WhatsApp</span>
-=======
->>>>>>> 1edf2a1 (alterando estilização)
         </a>
       </div>
     </>
