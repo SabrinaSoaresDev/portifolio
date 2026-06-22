@@ -1,8 +1,6 @@
 import Header from "../../Componente/Header";
-import { FaLinkedin, FaInstagram, FaGithub, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa";
-import { FaGraduationCap, FaReact, FaBootstrap } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaGithub, FaGraduationCap } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
 import { IoIosRocket } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import perfil from '../../assets/perfil2.jpeg';
@@ -19,9 +17,34 @@ import agendamentos from '../../assets/agendamentos.png';
 import link from '../../assets/link.png';
 import joias from '../../assets/joias.png';
 import click from '../../assets/click.png';
+import Ortodonsist from '../../assets/ortodonsist.png';
 import './home.css';
 import Footer from '../../Componente/Footer';
 import whatsapp from "../../assets/whatsapp.svg";
+// ✅ CORRETO - Sem duplicações
+import { 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaReact, 
+  FaGitAlt, 
+  FaNodeJs 
+} from "react-icons/fa";
+
+import { 
+ 
+  IoLogoFirebase 
+} from "react-icons/io5";
+
+import { 
+  SiTailwindcss, 
+  SiTypescript, 
+  SiDocker, 
+  SiVercel, 
+  SiNetlify, 
+  SiPostman 
+} from "react-icons/si";
+
+import { VscVscode } from "react-icons/vsc";
 
 const PROJECTS = [
   {
@@ -120,20 +143,35 @@ const PROJECTS = [
     liveUrl: "https://click-certo.vercel.app/#",
     githubUrl: "https://github.com/SabrinaSoaresDev/Click-Certo"
   },
+  {
+    id: 13,
+    title: "Odontosist- gestao de chamados",
+    description: "gestao de chamados para manutenção em clinicas odontologicas",
+    image: Ortodonsist,
+    liveUrl: "https://ortodonsist.vercel.app/",
+    githubUrl: "https://github.com/SabrinaSoaresDev/gestao-chamados-odontologicos"
+  },
 ];
 
-const SKILLS = [
-  { name: "HTML 5", icon: <FaHtml5 size={80} color="#F16529" /> },
-  { name: "CSS3", icon: <FaCss3Alt size={80} color="#FF9F1C" /> },
-  { name: "Javascript", icon: <IoLogoJavascript size={80} color="#F7DF1E" /> },
-  { name: "React", icon: <FaReact size={80} color="#2E86C1" /> },
-  { name: "Bootstrap", icon: <FaBootstrap size={80} color="#fff" /> },
-  { name: "Vs Code", icon: <VscVscode size={80} color="#2e86c1" /> },
-  { name: "Github", icon: <FaGitAlt size={80} color="#f00" /> },
-  { name: "MySQL", icon: <SiMysql size={80} color="#fff" /> }
+// ✅ CORRETO - Exportando como ARRAY
+export const SKILLS = [
+  { name: "React.js", icon: <FaReact size={80} color="#61DAFB" /> },
+  { name: "JavaScript", icon: <IoLogoJavascript size={80} color="#F7DF1E" /> },
+  { name: "TypeScript", icon: <SiTypescript size={80} color="#3178C6" /> },
+  { name: "HTML5", icon: <FaHtml5 size={80} color="#E34F26" /> },
+  { name: "CSS3", icon: <FaCss3Alt size={80} color="#1572B6" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss size={80} color="#06B6D4" /> },
+  { name: "Firebase", icon: <IoLogoFirebase size={80} color="#FFCA28" /> },
+  { name: "Node.js", icon: <FaNodeJs size={80} color="#339933" /> },
+  { name: "Docker", icon: <SiDocker size={80} color="#2496ED" /> },
+  { name: "Git/GitHub", icon: <FaGitAlt size={80} color="#F05032" /> },
+  { name: "Postman", icon: <SiPostman size={80} color="#FF6C37" /> },
+  { name: "VS Code", icon: <VscVscode size={80} color="#007ACC" /> },
+  { name: "Vercel", icon: <SiVercel size={80} color="#FFFFFF" /> },
+  { name: "Netlify", icon: <SiNetlify size={80} color="#00C7B7" /> }
 ];
 
-const curriculumUrl = 'https://drive.google.com/file/d/1fM1Cd3gPzsWoB0HQwaPVRLvCpPSrnMa8/view?usp=drive_link';
+const curriculumUrl = 'https://docs.google.com/document/d/1n5uyrOJIWAqLf_AFa3ICdquzX5OqUgUfHFPC5XQA24U/edit?usp=sharing';
 
 export default function Home() {
   const downloadCurriculum = () => {
@@ -189,7 +227,7 @@ export default function Home() {
                 <IoIosRocket size={25} aria-hidden="true" />
                 <h4>Cursos Complementares</h4>
                 <span>React Js do zero ao avançado na prática</span>
-                <span> / Em Andamento</span>
+                <span> / Concluído</span>
               </div>
             </div>
           </div>
