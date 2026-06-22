@@ -120,6 +120,14 @@ const PROJECTS = [
     liveUrl: "https://click-certo.vercel.app/#",
     githubUrl: "https://github.com/SabrinaSoaresDev/Click-Certo"
   },
+  {
+    id: 13,
+    title: "Odontosist- gestao de chamados",
+    description: "gestao de chamados para manutenção em clinicas odontologicas",
+    image: Ortodonsist,
+    liveUrl: "https://ortodonsist.vercel.app/",
+    githubUrl: "https://github.com/SabrinaSoaresDev/gestao-chamados-odontologicos"
+  },
 ];
 
 const SKILLS = [
@@ -133,7 +141,7 @@ const SKILLS = [
   { name: "MySQL", icon: <SiMysql size={80} color="#fff" /> }
 ];
 
-const curriculumUrl = 'https://drive.google.com/file/d/1fM1Cd3gPzsWoB0HQwaPVRLvCpPSrnMa8/view?usp=drive_link';
+const curriculumUrl = 'https://docs.google.com/document/d/1n5uyrOJIWAqLf_AFa3ICdquzX5OqUgUfHFPC5XQA24U/edit?usp=sharing';
 
 export default function Home() {
   const downloadCurriculum = () => {
